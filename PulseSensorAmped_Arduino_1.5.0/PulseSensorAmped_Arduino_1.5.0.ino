@@ -1,3 +1,5 @@
+#include <avdweb_SAMDtimer.h>
+
 
 /*  Pulse Sensor Amped 1.5    by Joel Murphy and Yury Gitman   http://www.pulsesensor.com
 
@@ -34,7 +36,7 @@ volatile boolean QS = false;        // becomes true when Arduoino finds a beat.
 //      https://github.com/WorldFamousElectronics/PulseSensor_Amped_Processing_Visualizer
 // SERIAL_PLOTTER outputs sensor data for viewing with the Arduino Serial Plotter
 //      run the Serial Plotter at 115200 baud: Tools/Serial Plotter or Command+L
-static int outputType = SERIAL_PLOTTER;
+static int outputType = PROCESSING_VISUALIZER; //SERIAL_PLOTTER;
 
 
 void setup(){
